@@ -15,7 +15,7 @@ Este é um projeto acadêmico desenvolvido durante a NLW Together oferecida pela
    * [Tabela de conteúdos](#tabela-de-conteudo)
    * [Tecnologias](#tecnologias)
    * [Funcionalidades](#features)
-   * [Instalação](#instalacao)
+   * [Instalação](#instalação)
    * [Como usar](#como-usar)
 
 
