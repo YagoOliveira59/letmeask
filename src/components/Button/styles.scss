@@ -1,0 +1,53 @@
+.button {
+  height       : 54px;
+  border-radius: 10px;
+  font-weight  : 500;
+  background   : #FF5964;
+  color        : #FFF;
+  padding      : 0 32px;
+
+  text-align: center;
+
+  display    : flex;
+  justify-content: center;
+  align-items: center;
+  padding    : 15px;
+
+  cursor: pointer;
+  border: 0;
+
+  transition: filter 0.2s;
+
+  img {
+    margin-right: 8px;
+  }
+
+  &.outlined {
+    background: #FFF;
+    border    : 1px solid #FF5964;
+    max-width: 40px;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      justify-content: center;
+      align-items: center;
+      min-height: 100%;
+
+      > img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  &:not(:disabled):hover {
+    filter: brightness(0.9);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor : not-allowed;
+  }
+}

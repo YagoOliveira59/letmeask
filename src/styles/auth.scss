@@ -1,0 +1,264 @@
+#page-auth {
+  display         : flex;
+  align-items     : stretch;
+  height          : 100vh;
+  background-image: url('../assets/images/back.svg') !important;
+  background-size : 26%;
+
+  body {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+
+  }
+
+  aside {
+    flex: 7;
+
+    background-image: url('../assets/images/illustration.svg');
+    background-size : cover;
+    color           : #FFF;
+    display         : flex;
+    align-items     : center;
+    flex-direction  : column;
+
+
+    padding: 120px 80px;
+
+    strong {
+      font       : 700 36px 'Poppins', sans-serif;
+      line-height: 42px;
+      margin-top : 15%;
+    }
+
+    p {
+      font-size  : 24px;
+      line-height: 32px;
+      margin-top : 14px;
+      color      : #f8f8f8;
+    }
+
+    .line-1 {
+      position    : relative;
+      margin-top  : 30px;
+      width       : 22em;
+      border-right: 2px solid #f8f8f8;
+      font-size   : 24px;
+      text-align  : center;
+      white-space : nowrap;
+      overflow    : hidden;
+      transform   : translateY(-50%);
+    }
+
+    /* Animation */
+    .anim-typewriter {
+      animation: typewriter 2s steps(44) 1s 1 normal both,
+        blinkTextCursor 500ms steps(44) infinite normal;
+    }
+
+    @keyframes typewriter {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 21.5em;
+      }
+    }
+
+    @keyframes blinkTextCursor {
+      from {
+        border-right-color: rgba(255, 255, 255, .75);
+      }
+
+      to {
+        border-right-color: transparent;
+      }
+    }
+  }
+
+  main {
+    flex: 8;
+
+    padding: 0 32px;
+
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+
+
+    .main-content {
+      display       : flex;
+      flex-direction: column;
+      align-items   : stretch;
+      text-align    : center;
+
+      >img {
+        align-self: center;
+      }
+
+      h2 {
+        font-size  : 24px;
+        margin     : 64px 0 24px;
+        font-family: 'Poppins', sans-serif;
+        color      : #FFFFFF
+      }
+
+      form {
+        input {
+          height       : 54px;
+          border-radius: 8px;
+          padding      : 0 16px;
+          background   : #FFFFFF;
+          border       : 1px solid rgba(0, 0, 0, 0.54);
+        }
+
+        input:focus {
+          outline: none !important;
+          border : 1px solid #FF5964;
+        }
+
+        button {
+          margin-top: 16px;
+        }
+
+        button,
+        input {
+          font-size : 20px;
+          text-align: center;
+          width     : 100%;
+        }
+      }
+
+      p {
+        font-size : 14px;
+        color     : #737380;
+        margin-top: 16px;
+
+        a {
+          color: #FF5964;
+        }
+      }
+    }
+
+    .create-room {
+      margin-top : 64px;
+      width      : 345px;
+      height     : 54px;
+      font-weight: 500;
+
+      display        : flex;
+      justify-content: center;
+      align-items    : center;
+
+      font-family: Roboto;
+      font-style : normal;
+      font-weight: 500;
+      font-size  : 20px;
+      line-height: 23px;
+
+      cursor       : pointer;
+      background   : #FFFFFF;
+      color        : rgba(0, 0, 0, 0.54);
+      border       : 0;
+      box-shadow   : 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+      border-radius: 10px;
+
+      transition: filter 0.2s;
+
+      img {
+        max-width : 24px;
+        max-height: 24px;
+        flex      : none;
+        order     : 0;
+        flex-grow : 0;
+        margin    : 0px 15px;
+      }
+
+      &:hover {
+        filter: brightness(0.9);
+      }
+    }
+
+    .separator {
+      font-size: 14px;
+      color    : #a8a8b3;
+
+      margin     : 32px 0;
+      display    : flex;
+      align-items: center;
+
+      &::before {
+        content     : '';
+        flex        : 1;
+        height      : 1px;
+        background  : #a8a8b3;
+        margin-right: 16px;
+      }
+
+      &::after {
+        content    : '';
+        flex       : 1;
+        height     : 1px;
+        background : #a8a8b3;
+        margin-left: 16px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+
+    background-size: 60%;
+
+    aside {
+      display: none;
+
+      strong {
+        margin-top: 15%;
+      }
+
+      .line-1 {
+        max-width: 80%;
+      }
+    }
+
+    main {
+      width: 75%;
+
+      .main-content {
+        max-width: 100%;
+
+        >img {
+          max-width : 80%;
+          align-self: center;
+        }
+
+        form {
+
+          button,
+          input {
+            font-size : 18px;
+            text-align: center;
+            width     : 100%;
+          }
+        }
+      }
+
+      .create-room {
+        max-width: 100%;
+
+        font-size: 18px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    main {
+      .main-content {
+        width    : 100%;
+        max-width: 345px;
+
+      }
+    }
+  }
+}
