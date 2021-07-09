@@ -1,5 +1,8 @@
 ![Logo](https://github.com/YagoOliveira59/letmeask/blob/master/.github/logo.svg)
 
+![Banner](https://github.com/YagoOliveira59/letmeask/blob/master/.github/cover.svg)
+
+
 # Sobre o projeto
 
 ### Letmeask é perfeito para criar salas de Q&A com o seu público. Responda perguntas em tempo real!
