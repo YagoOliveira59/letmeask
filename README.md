@@ -16,7 +16,7 @@ Este é um projeto acadêmico desenvolvido durante a NLW Together oferecida pela
    * [Tecnologias](#tecnologias)
    * [Funcionalidades](#features)
    * [Instalação](#instalação)
-   * [Como usar](#como-usar)
+   * [iniciar](#iniciar)
 
 
 ## Tecnologias
